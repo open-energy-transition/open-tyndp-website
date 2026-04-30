@@ -1,0 +1,27 @@
+[workspace]
+name = "open-tyndp-website"
+description = "Open-TYNDP project website (Jekyll + Minimal Mistakes)"
+version = "0.1.0"
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64"]
+
+[dependencies]
+ruby = ">=3.2,<3.4"
+# Required to compile native Ruby gems (e.g. nokogiri, sassc)
+gcc = "*"
+gxx = "*"
+clangxx = "*"
+make = "*"
+
+[tasks]
+# Install Ruby gems via Bundler
+install = "bundle install"
+
+# Serve the site locally at http://localhost:4000
+serve = { cmd = "SSL_CERT_FILE=\"$CONDA_PREFIX/ssl/cert.pem\" bundle exec jekyll serve --baseurl ''", depends-on = ["install"] }
+
+# Build the site into _site/
+build = { cmd = "SSL_CERT_FILE=\"$CONDA_PREFIX/ssl/cert.pem\" bundle exec jekyll build", depends-on = ["install"] }
+
+# Clean the build output
+clean = "rm -rf _site .jekyll-cache"

@@ -1,0 +1,74 @@
+# === THEME ===
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-include-cache
+
+# === SITE INFO ===
+title: "Open-TYNDP"
+logo: "/assets/images/oet-logo-red.svg"
+subtitle: "Open-Source European Transmission Planning"
+description: "Open-source energy system model for the ENTSO-E Ten-Year Network Development Plan, built on PyPSA-Eur."
+# url: "https://open-tyndp.openenergytransition.org"  # uncomment when custom domain is configured
+baseurl: ""
+
+# === SKIN ===
+# Options: "default", "air", "aqua", "contrast", "dark", "dirt",
+#          "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "air"
+
+# === AUTHOR ===
+author:
+  name: "Open Energy Transition"
+  bio: "Building open-source tools for the energy transition."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/open-energy-transition/open-tyndp"
+    - label: "Documentation"
+      icon: "fas fa-fw fa-book"
+      url: "https://open-tyndp.readthedocs.io"
+    - label: "Website"
+      icon: "fas fa-fw fa-globe"
+      url: "https://openenergytransition.org"
+
+# === FOOTER ===
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/open-energy-transition/open-tyndp"
+    - label: "Docs"
+      icon: "fas fa-fw fa-book"
+      url: "https://open-tyndp.readthedocs.io"
+
+# === DEFAULTS ===
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      share: false
+      related: false
+      show_date: false
+  - scope:
+      path: "index.html"
+    values:
+      layout: splash
+
+# === BUILD ===
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: Europe/Berlin
+
+exclude:
+  - "*.gemspec"
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

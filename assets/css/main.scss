@@ -1,0 +1,252 @@
+---
+# Only the main.scss file needs front matter (the dashes above)
+---
+// SPDX-FileCopyrightText: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
+//
+// SPDX-License-Identifier: MIT
+@charset "utf-8";
+html { font-size: 16px !important; }
+
+// Widen content area on single-layout pages
+.layout--single .page {
+  width: 100%;
+}
+
+.layout--single .page__inner-wrap {
+  max-width: 100%;
+}
+
+// Style last nav link as a red button (GitHub)
+.greedy-nav .visible-links li:last-child a {
+  background-color: #e31937;
+  color: #ffffff !important;
+  border-radius: 9999px;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  &:hover {
+    background-color: #c0152e;
+    color: #ffffff !important;
+  }
+}
+
+// ── Header logo size ──
+.site-logo img {
+  max-height: 44px;
+  width: auto;
+  display: block;
+}
+
+// ── OET-style hero buttons ──
+.btn--hero-sage {
+  background-color: #e7eedb;
+  color: #1d1f2c !important;
+  border-color: #e7eedb;
+  border-radius: 9999px !important;
+  font-weight: 500;
+  &:hover {
+    background-color: #d4e0c4;
+    border-color: #d4e0c4;
+    color: #1d1f2c !important;
+  }
+}
+
+.btn--hero-red {
+  background-color: #e31937;
+  color: #ffffff !important;
+  border-color: #e31937;
+  border-radius: 9999px !important;
+  font-weight: 500;
+  &:hover {
+    background-color: #c0152e;
+    border-color: #c0152e;
+    color: #ffffff !important;
+  }
+}
+
+// ── OET brand overrides (must come before theme imports) ──
+$link-color: #e31937;
+$primary-color: #e31937;
+$accent-color: #7c9885;
+$global-font-family: "Poppins", sans-serif;
+$header-font-family: "Oxanium", sans-serif;
+
+// ── Design tokens (Tailwind-like scales) ──
+@import "tokens";
+@import "minimal-mistakes/skins/default"; // light skin
+@import "minimal-mistakes";
+
+@include generate-radius-utilities($radius-scale, 'btn-radius');
+
+/* ── Year switcher ── */
+.year-switcher {
+  display: flex;
+  margin-bottom: 0;
+  border: 1px solid #d0d0d0;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  width: fit-content;
+}
+.year-btn {
+  padding: 0.45rem 1.25rem;
+  border: none;
+  border-right: 1px solid #d0d0d0;
+  background: #f5f5f5;
+  color: #555;
+  font-family: monospace;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.year-btn:last-child { border-right: none; }
+.year-btn:hover { background: #ebebeb; color: #222; }
+.year-btn.active { background: #e31937; color: #fff; }
+.map-frame-wrapper {
+  border: 1px solid #d0d0d0;
+  border-radius: 0 4px 4px 4px;
+  overflow: hidden;
+}
+.map-frame-wrapper iframe {
+  display: block;
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
+/* ── Stat row ── */
+.stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.stat {
+  background-color: #F8FAFB;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #E0E0E0;
+  text-align: center;
+ }
+.stat-value {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1;
+}
+.stat-label {
+  font-size: 0.7rem;
+  color: #777;
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+// ── Nav links: smaller font, black color ──
+.greedy-nav .visible-links a {
+  font-size: map-get($font-size-scale, sm) !important;
+  color: #000000 !important;
+  &:hover {
+    color: #e31937 !important;
+  }
+}
+
+.site-title {
+  font-size: 0.9rem !important;
+  color: #000000 !important;
+}
+
+// ── OET-style hero buttons (dark overlay section only) ──
+.page__hero--overlay .btn {
+  border-radius: 9999px !important;
+  font-weight: 400;
+  padding: map-get($spacing-scale, md) map-get($spacing-scale, xl);
+  font-size: map-get($font-size-scale, sm) !important;
+  line-height: normal;
+  text-shadow: none;
+  margin-right: 1rem;
+  border: none !important;
+}
+
+.page__hero--overlay p .btn:nth-child(1) {
+  background-color: #e7eedb !important;
+  color: #1d1f2c !important;
+  &:hover {
+    background-color: #d4e0c4 !important;
+    color: #1d1f2c !important;
+  }
+}
+
+.page__hero--overlay p .btn:nth-child(2) {
+  background-color: #e31937 !important;
+  color: #ffffff !important;
+  &:hover {
+    background-color: #c0152e !important;
+    color: #ffffff !important;
+  }
+}
+
+.page {
+  &__hero {
+  &--overlay {
+    padding: map-get($spacing-scale, lg);
+    padding-top: map-get($spacing-scale, 2xl);
+
+
+    @media screen and (min-width: 1280px) {
+         padding: map-get($spacing-scale, 6xl);
+    }
+    .wrapper {
+      .page {
+        &__title {
+          font-size: map-get($font-size-scale, 5xl);
+        }
+      }
+    }
+  }
+}
+&__lead {
+  margin-bottom: map-get($spacing-scale, 3xl);
+}
+}
+
+
+// Footer
+.page__footer {
+  background-color: #e31937;
+
+  footer {
+    margin-top: 0;
+    padding: 64px 22px;
+    padding-bottom: 0;
+  }
+
+  .footer {
+    &__main-content {
+     padding-bottom: 64px;
+
+      &--right {
+
+        &__item--wrapper {
+
+           a {
+            padding: 0 !important;
+            font-weight: normal !important;
+            text-align: left;
+           }
+        }
+      }
+    }
+  }
+}
+
+
+// Buttons
+.btn.btn--primary,
+.btn.btn--inverse {
+  border-radius: map-get($radius-scale, xl);
+}

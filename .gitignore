@@ -1,0 +1,8 @@
+_site
+.jekyll-cache
+.jekyll-metadata
+.idea
+.claude
+CLAUDE.md
+site-export
+.pixi

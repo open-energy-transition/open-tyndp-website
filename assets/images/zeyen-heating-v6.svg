@@ -1,0 +1,203 @@
+<svg viewBox="0 0 1100 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700&amp;family=Poppins:wght@400;500;600&amp;display=swap');
+      text { font-family: 'Poppins', sans-serif; }
+      .lh { font-family: 'Oxanium', sans-serif; font-weight: 700; }
+    </style>
+    <marker id="a-dark" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#1d1f2c"/>
+    </marker>
+    <marker id="a-grey" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#888"/>
+    </marker>
+    <marker id="a-sage" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#7c9885"/>
+    </marker>
+    <marker id="a-sage" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#7c9885"/>
+    </marker>
+    <marker id="a-right-sage" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#7c9885"/>
+    </marker>
+    <marker id="a-sage-end" markerWidth="7" markerHeight="7" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#7c9885"/>
+    </marker>
+    <marker id="a-sage" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#7c9885"/>
+    </marker>
+  </defs>
+
+  <!-- ══════════════════════════ COL 1: SOURCES ══════════════════════════════════ -->
+  <rect x="12" y="22" width="136" height="500" rx="6" fill="#f3f7ee" stroke="#7c9885" stroke-width="1.5"/>
+  <text x="80" y="15" text-anchor="middle" font-size="10" fill="#1d1f2c" letter-spacing="1.5" class="lh">SOURCES</text>
+
+  <circle cx="80" cy="96"  r="32" fill="#e7eedb" stroke="#7c9885" stroke-width="1.4"/>
+  <text x="80" y="101" text-anchor="middle" font-size="10.5" font-weight="600" fill="#1d1f2c">biomass</text>
+
+  <circle cx="80" cy="204" r="32" fill="#e7eedb" stroke="#7c9885" stroke-width="1.4"/>
+  <text x="80" y="209" text-anchor="middle" font-size="13" font-weight="700" fill="#1d1f2c">H₂</text>
+
+  <circle cx="80" cy="318" r="32" fill="#e7eedb" stroke="#7c9885" stroke-width="1.4"/>
+  <text x="80" y="323" text-anchor="middle" font-size="13" font-weight="700" fill="#1d1f2c">CH₄</text>
+
+  <circle cx="80" cy="432" r="32" fill="#e7eedb" stroke="#7c9885" stroke-width="1.4"/>
+  <text x="80" y="428" text-anchor="middle" font-size="10.5" font-weight="600" fill="#1d1f2c">elec-</text>
+  <text x="80" y="442" text-anchor="middle" font-size="10.5" font-weight="600" fill="#1d1f2c">tricity</text>
+
+  <!-- ══════════════════════ COL 2: DISTRIBUTION ════════════════════════════════ -->
+  <rect x="162" y="415" width="160" height="110" rx="6" fill="#f8f8f8" stroke="#aaa" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="242" y="407" text-anchor="middle" font-size="9.5" fill="#555" letter-spacing="0.8" class="lh">DISTRIBUTION</text>
+
+  <rect x="173" y="428" width="138" height="24" rx="3" fill="#bbb" opacity="0.70"/>
+  <text x="242" y="445" text-anchor="middle" font-size="10" fill="white" font-weight="500">CH₄ Distribution</text>
+
+  <rect x="173" y="487" width="138" height="24" rx="3" fill="#bbb" opacity="0.55"/>
+  <text x="242" y="504" text-anchor="middle" font-size="10" fill="white" font-weight="500">Electricity Distribution</text>
+
+  <!-- ══════════════════════ COL 3 TOP: CENTRAL HEATING ════════════════════════ -->
+  <rect x="340" y="22" width="210" height="300" rx="6" fill="#fdf0f2" stroke="#e31937" stroke-width="1.5"/>
+  <text x="445" y="15" text-anchor="middle" font-size="10" fill="#e31937" letter-spacing="1" class="lh">CENTRAL HEATING</text>
+
+  <rect x="350" y="38"  width="190" height="24" rx="3" fill="#e31937" opacity="0.90"/>
+  <text x="445" y="55"  text-anchor="middle" font-size="10" fill="white" font-weight="500">Biomass CHP</text>
+  <rect x="350" y="76"  width="190" height="24" rx="3" fill="#e31937" opacity="0.76"/>
+  <text x="445" y="93"  text-anchor="middle" font-size="10" fill="white" font-weight="500">Central Solar Thermal</text>
+  <rect x="350" y="114" width="190" height="24" rx="3" fill="#e31937" opacity="0.90"/>
+  <text x="445" y="131" text-anchor="middle" font-size="10" fill="white" font-weight="500">Fuel Cell</text>
+  <rect x="350" y="152" width="190" height="24" rx="3" fill="#e31937" opacity="0.90"/>
+  <text x="445" y="169" text-anchor="middle" font-size="10" fill="white" font-weight="500">Gas CHP</text>
+  <rect x="350" y="190" width="190" height="24" rx="3" fill="#e31937" opacity="0.76"/>
+  <text x="445" y="207" text-anchor="middle" font-size="10" fill="white" font-weight="500">Central Gas Boiler</text>
+  <rect x="350" y="228" width="190" height="24" rx="3" fill="#e31937" opacity="0.63"/>
+  <text x="445" y="245" text-anchor="middle" font-size="10" fill="white" font-weight="500">Central Air Heat Pump</text>
+  <rect x="350" y="266" width="190" height="24" rx="3" fill="#e31937" opacity="0.52"/>
+  <text x="445" y="283" text-anchor="middle" font-size="10" fill="white" font-weight="500">Central Resistive Heater</text>
+
+  <!-- ══════════════════════ COL 3 BOTTOM: INDIVIDUAL ══════════════════════════ -->
+  <rect x="340" y="346" width="210" height="180" rx="6" fill="#f3f7ee" stroke="#7c9885" stroke-width="1.5"/>
+  <text x="445" y="339" text-anchor="middle" font-size="10" fill="#7c9885" letter-spacing="1" class="lh">INDIVIDUAL</text>
+
+  <rect x="350" y="360" width="190" height="22" rx="3" fill="#7c9885" opacity="0.90"/>
+  <text x="445" y="376" text-anchor="middle" font-size="10" fill="white" font-weight="500">Air Heat Pump</text>
+  <rect x="350" y="396" width="190" height="22" rx="3" fill="#7c9885" opacity="0.72"/>
+  <text x="445" y="412" text-anchor="middle" font-size="10" fill="white" font-weight="500">Solar Thermal</text>
+  <rect x="350" y="432" width="190" height="22" rx="3" fill="#7c9885" opacity="0.90"/>
+  <text x="445" y="448" text-anchor="middle" font-size="10" fill="white" font-weight="500">Gas Boiler</text>
+  <rect x="350" y="468" width="190" height="22" rx="3" fill="#7c9885" opacity="0.65"/>
+  <text x="445" y="484" text-anchor="middle" font-size="10" fill="white" font-weight="500">Resistive Heater</text>
+  <rect x="350" y="504" width="190" height="22" rx="3" fill="#7c9885" opacity="0.90"/>
+  <text x="445" y="520" text-anchor="middle" font-size="10" fill="white" font-weight="500">Ground Heat Pump</text>
+
+  <!-- ══════════════════════════ COL 4: DEMAND SECTORS (narrowed)
+       Outer block x=596–918, cx=757
+  ═════════════════════════════════════════════════════════════════════════════ -->
+  <rect x="596" y="22" width="322" height="500" rx="6" fill="#fafafa" stroke="#ddd" stroke-width="1.2"/>
+  <text x="757" y="15" text-anchor="middle" font-size="10" fill="#555" letter-spacing="1" class="lh">DEMAND SECTORS</text>
+
+  <!-- District Heating -->
+  <circle cx="757" cy="82" r="38" fill="#fde8eb" stroke="#e31937" stroke-width="1.6"/>
+  <text x="757" y="78"  text-anchor="middle" font-size="10.5" font-weight="700" fill="#e31937">District</text>
+  <text x="757" y="93"  text-anchor="middle" font-size="10.5" font-weight="700" fill="#e31937">Heating</text>
+
+  <!-- Individual Heating Demand block -->
+  <rect x="604" y="148" width="306" height="366" rx="6" fill="#f3f7ee" stroke="#7c9885" stroke-width="1.4"/>
+  <text x="757" y="140" text-anchor="middle" font-size="9" fill="#7c9885" letter-spacing="0.8" class="lh">INDIVIDUAL HEATING DEMAND</text>
+
+  <text x="757" y="170" text-anchor="middle" font-size="8.5" font-weight="600" fill="#888" letter-spacing="0.5" class="lh">URBAN INDIVIDUAL</text>
+
+  <circle cx="757" cy="210" r="30" fill="#e7eedb" stroke="#7c9885" stroke-width="1.3"/>
+  <text x="757" y="206" text-anchor="middle" font-size="9.5" font-weight="600" fill="#1d1f2c">resid-</text>
+  <text x="757" y="219" text-anchor="middle" font-size="9.5" font-weight="600" fill="#1d1f2c">ential</text>
+
+  <circle cx="757" cy="278" r="30" fill="#e7eedb" stroke="#7c9885" stroke-width="1.3"/>
+  <text x="757" y="282" text-anchor="middle" font-size="9.5" font-weight="600" fill="#1d1f2c">service</text>
+
+  <line x1="612" y1="328" x2="902" y2="328" stroke="#c8ddc9" stroke-width="1"/>
+  <text x="757" y="346" text-anchor="middle" font-size="8.5" font-weight="600" fill="#888" letter-spacing="0.5" class="lh">RURAL INDIVIDUAL</text>
+
+  <circle cx="757" cy="386" r="30" fill="#e7eedb" stroke="#7c9885" stroke-width="1.3"/>
+  <text x="757" y="382" text-anchor="middle" font-size="9.5" font-weight="600" fill="#1d1f2c">resid-</text>
+  <text x="757" y="395" text-anchor="middle" font-size="9.5" font-weight="600" fill="#1d1f2c">ential</text>
+
+  <circle cx="757" cy="452" r="30" fill="#e7eedb" stroke="#7c9885" stroke-width="1.3"/>
+  <text x="757" y="456" text-anchor="middle" font-size="9.5" font-weight="600" fill="#1d1f2c">service</text>
+
+  <!-- ══════════════════════════ COL 5: BUILDING RENOVATION
+       Block x=934–1088, spans y=22–522 (full height)
+  ═════════════════════════════════════════════════════════════════════════════ -->
+  <rect x="934" y="22" width="154" height="500" rx="6" fill="#f3f7ee" stroke="#7c9885" stroke-width="1.5"/>
+  <text x="1011" y="15" text-anchor="middle" font-size="10" fill="#7c9885" letter-spacing="1" class="lh">RENOVATION</text>
+
+  <!-- Simple house icon -->
+  <g transform="translate(1011, 62)">
+    <polygon points="0,-18 -16,-4 16,-4" fill="#e7eedb" stroke="#7c9885" stroke-width="1.4"/>
+    <rect x="-12" y="-4" width="24" height="16" rx="1" fill="#e7eedb" stroke="#7c9885" stroke-width="1.4"/>
+    <rect x="-4" y="4" width="8" height="8" rx="1" fill="#7c9885" opacity="0.5"/>
+  </g>
+
+  <!-- Vertical label -->
+  <text transform="rotate(-90, 1011, 300)" x="1011" y="305"
+        text-anchor="middle" font-size="9.5" fill="#7c9885" letter-spacing="1.5" class="lh">BUILDING RENOVATION</text>
+
+  <!-- Explanatory text at bottom -->
+  <text x="1011" y="418" text-anchor="middle" font-size="8" fill="#888">based on country-</text>
+  <text x="1011" y="430" text-anchor="middle" font-size="8" fill="#888">specific building</text>
+  <text x="1011" y="442" text-anchor="middle" font-size="8" fill="#888">stock data</text>
+  <text x="1011" y="462" text-anchor="middle" font-size="8.5" fill="#555">reduces space</text>
+  <text x="1011" y="474" text-anchor="middle" font-size="8.5" fill="#555">heating demand</text>
+  <text x="1011" y="492" text-anchor="middle" font-size="13" fill="#7c9885">↓</text>
+
+  <!-- ══════════════════════════════ ARROWS ══════════════════════════════════════
+
+       SOURCES → CENTRAL HEATING
+  ═════════════════════════════════════════════════════════════════════════════ -->
+  <path d="M112,96  C220,96  280,50  350,50"  fill="none" stroke="#1d1f2c" stroke-width="1.4" marker-end="url(#a-dark)" opacity="0.55"/>
+  <path d="M112,196 C218,196 270,126 350,126" fill="none" stroke="#1d1f2c" stroke-width="1.4" marker-end="url(#a-dark)" opacity="0.55"/>
+  <path d="M112,212 C218,212 272,164 350,164" fill="none" stroke="#1d1f2c" stroke-width="1.4" marker-end="url(#a-dark)" opacity="0.55"/>
+  <path d="M112,308 C210,308 272,180 350,164" fill="none" stroke="#1d1f2c" stroke-width="1.4" marker-end="url(#a-dark)" opacity="0.55"/>
+  <path d="M112,320 C215,320 275,208 350,202" fill="none" stroke="#1d1f2c" stroke-width="1.4" marker-end="url(#a-dark)" opacity="0.55"/>
+  <path d="M112,422 C215,422 278,248 350,240" fill="none" stroke="#1d1f2c" stroke-width="1.4" marker-end="url(#a-dark)" opacity="0.55"/>
+  <path d="M112,440 C220,440 282,288 350,278" fill="none" stroke="#1d1f2c" stroke-width="1.4" marker-end="url(#a-dark)" opacity="0.55"/>
+
+  <!-- SOURCES → DISTRIBUTION -->
+  <path d="M112,328 C136,328 144,434 173,434" fill="none" stroke="#888" stroke-width="1.3" marker-end="url(#a-grey)" opacity="0.65"/>
+  <path d="M112,444 C136,444 144,494 173,494" fill="none" stroke="#888" stroke-width="1.3" marker-end="url(#a-grey)" opacity="0.65"/>
+
+  <!-- DISTRIBUTION → INDIVIDUAL -->
+  <path d="M322,440 C335,440 340,444 350,444" fill="none" stroke="#888" stroke-width="1.2" marker-end="url(#a-grey)" opacity="0.65"/>
+  <path d="M322,494 C335,494 338,374 350,371" fill="none" stroke="#888" stroke-width="1.2" marker-end="url(#a-grey)" opacity="0.65"/>
+  <path d="M322,498 C335,498 338,480 350,479" fill="none" stroke="#888" stroke-width="1.2" marker-end="url(#a-grey)" opacity="0.65"/>
+  <path d="M322,502 C335,502 338,516 350,515" fill="none" stroke="#888" stroke-width="1.2" marker-end="url(#a-grey)" opacity="0.65"/>
+
+  <!-- FUNNEL: Central Heating → District Heating -->
+  <path d="M 550,38
+           L 550,290
+           C 562,290 590,90 596,88
+           L 596,76
+           C 590,74 562,38 550,38
+           Z"
+        fill="#e31937" fill-opacity="0.18" stroke="#e31937" stroke-width="1" stroke-opacity="0.5"/>
+  <line x1="596" y1="82" x2="719" y2="82" stroke="#e31937" stroke-width="1.2" stroke-opacity="0.4" stroke-dasharray="3,2"/>
+
+  <!-- FUNNEL: Individual Heating → Individual Heating Demand block -->
+  <path d="M 550,360
+           L 550,526
+           C 562,526 598,452 604,449
+           L 604,437
+           C 598,434 562,360 550,360
+           Z"
+        fill="#7c9885" fill-opacity="0.22" stroke="#7c9885" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- BUILDING RENOVATION → ALL DEMAND SECTORS (leftward arrows pointing at demand circles) -->
+  <!-- → District Heating -->
+  <line x1="934" y1="82"  x2="918" y2="82"  stroke="#7c9885" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#a-sage)" opacity="0.75"/>
+  <!-- → Urban residential -->
+  <line x1="934" y1="210" x2="910" y2="210" stroke="#7c9885" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#a-sage)" opacity="0.75"/>
+  <!-- → Urban service -->
+  <line x1="934" y1="278" x2="910" y2="278" stroke="#7c9885" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#a-sage)" opacity="0.75"/>
+  <!-- → Rural residential -->
+  <line x1="934" y1="386" x2="910" y2="386" stroke="#7c9885" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#a-sage)" opacity="0.75"/>
+  <!-- → Rural service -->
+  <line x1="934" y1="452" x2="910" y2="452" stroke="#7c9885" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#a-sage)" opacity="0.75"/>
+</svg>

@@ -1,0 +1,20 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: open-tyndp-site
+Upstream-Contact: info@openenergytransition.org
+Source: https://github.com/open-energy-transition/open-tyndp-site
+
+Files: pages/*.md _includes/*.html index.html _config.yml _data/*.yml Gemfile Gemfile.lock pixi.toml pixi.lock README.md .gitignore
+Copyright: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
+License: MIT
+
+Files: assets/images/*.png assets/images/*.svg
+Copyright: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
+License: MIT
+
+Files: .github/deploy/deploy.yml .github/workflows/pre-commit.yaml
+Copyright: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
+License: MIT
+
+Files: CNAME
+Copyright: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
+License: MIT

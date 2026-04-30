@@ -1,0 +1,97 @@
+---
+layout: splash
+title: "Open-TYNDP"
+permalink: /
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "0.6"
+  overlay_image: "https://www.openenergytransition.org/api/media/file/40a5a738559ea48f610c5ce3cb43a0f202e25fd1.png"
+  actions:
+    - label: "Explore Results"
+      url: "/results/"
+    - label: "View on GitHub"
+      url: "https://github.com/open-energy-transition/open-tyndp"
+
+excerpt: >
+  Open-source energy system model for the ENTSO-E Ten-Year Network Development Plan (TYNDP) —
+  built on PyPSA-Eur, fully reproducible, and benchmarked against TYNDP 2024 reference data.
+
+feature_row:
+  - title: "Transparency"
+    excerpt: "Every assumption and input is visible and auditable."
+  - title: "Reproducibility"
+    excerpt: "Any stakeholder can re-run or verify TYNDP scenarios independently via <a href='https://snakemake.readthedocs.io/en/stable/'>Snakemake</a>."
+  - title: "Automation"
+    excerpt: "The entire modelling process runs automatically, from raw inputs to final outputs and visualisations."
+
+feature_row2:
+  - title: "Collaboration"
+    excerpt: "A shared, open codebase makes cross-organisation collaboration far easier."
+  - title: "Reusable"
+    excerpt: "The same methodology can be applied to regional data beyond Europe."
+  - title: "Community-driven"
+    excerpt: "Benefits from continuous developments to <a href='https://pypsa-eur.readthedocs.io/en/latest/'>PyPSA-Eur</a> by a broad community of researchers and practitioners."
+---
+
+{% include feature_row %}
+{% include feature_row id="feature_row2" %}
+
+<style>
+/* Page-specific hero overlay using front-matter `header.overlay_image` */
+.page__hero--overlay {
+  background-image: linear-gradient(90.01deg, rgba(0,0,0,0.8) -20.3%, rgba(0,0,0,0.64) 39.58%, rgba(0,0,0,0) 99.99%), url('{{ page.header.overlay_image | default: page.overlay_image | default: site.header.overlay_image }}') !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+</style>
+
+<div class="stat-row">
+  <div class="stat">
+    <div class="stat-value">100%</div>
+    <div class="stat-label">Open Source</div>
+    <div class="stat-desc">All code, data, and assumptions are publicly available and auditable.</div>
+  </div>
+  <div class="stat">
+    <div class="stat-value">Collaborative</div>
+    <div class="stat-label">By Design</div>
+    <div class="stat-desc">A shared, open codebase makes cross-organisation work straightforward.</div>
+  </div>
+  <div class="stat">
+  <div class="stat-value">Automated</div>
+  <div class="stat-label">Workflow</div>
+  <div class="stat-desc">Every modelling step runs automatically, from data preparation to final results.</div>
+</div>
+  <div class="stat">
+    <div class="stat-value">2024</div>
+    <div class="stat-label">TYNDP Aligned</div>
+    <div class="stat-desc">Calibrated to <a href="https://www.entsoe.eu/outlooks/tyndp/2024/">ENTSO-E TYNDP 2024</a> reference data and methodology.</div>
+  </div>
+</div>
+
+<h2>Where Can Open-TYNDP Help?</h2>
+
+<ul>
+  <li><strong>Transparency</strong> — not only assumptions and inputs are visible and auditable, but also the models themselves.</li>
+  <li><strong>Reproducibility</strong> — any stakeholder is able to re-run the TYNDP 2024 National Trends scenario independently.</li>
+  <li><strong>Additional resource</strong> — allows for broader expert contribution.</li>
+  <li><strong>Automated workflow</strong> — the entire modelling process runs automatically, from raw inputs to final outputs.</li>
+</ul>
+
+<h2>What Can People Do with Open-TYNDP?</h2>
+
+<ul>
+  <li>Independently reproduce and examine the official TYNDP 2024 National Trends scenario</li>
+  <li>Test custom scenarios (e.g. alternative demand or RES assumptions) without starting from scratch</li>
+  <li>Directly compare open-source model results for TYNDP 2024 with ENTSO-E outputs in a transparent framework</li>
+  <li>Build on a common, community-maintained European planning model</li>
+  <li>Collaborate across organisations and institutions using a shared, open codebase</li>
+  <li>Benefit from the continuous developments and features of an open-source framework, driven by a broad community of researchers and practitioners</li>
+</ul>
+
+<h2>Get Started</h2>
+
+<p>Full documentation with installation instructions, configuration, and workflow descriptions.</p>
+
+<p><a href="https://open-tyndp.readthedocs.io" class="btn btn--primary text-base">Documentation</a>
+<a href="https://github.com/open-energy-transition/open-tyndp" class="btn btn--inverse text-base">GitHub</a></p>

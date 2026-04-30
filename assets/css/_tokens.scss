@@ -1,0 +1,51 @@
+// SPDX-FileCopyrightText: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
+// SPDX-License-Identifier: MIT
+
+// Design tokens
+$radius-scale: (
+  none: 0,
+  sm: 0.125rem,
+  md: 0.25rem,
+  lg: 0.5rem,
+  xl: 1.5rem,
+  full: 9999px
+);
+
+@mixin generate-radius-utilities($map, $prefix: 'btn-radius') {
+  @each $name, $value in $map {
+    .#{$prefix}-#{$name} {
+      border-radius: $value !important;
+    }
+  }
+}
+
+// Spacing & font-size tokens (rem-based, Tailwind-like scale)
+$spacing-scale: (
+  sm: 0.5rem,   // 8px
+  md: 0.75rem,  // 12px
+  lg: 1rem,     // 16px
+  xl: 1.5rem,   // 24px
+  2xl: 2rem,   // 32px
+  3xl: 2.5rem, // 40px
+  5xl: 3.75rem,   // 60px
+  6xl: 4.5rem   // 72px
+);
+
+$font-size-scale: (
+  sm: 0.875rem, // 14px
+  base: 1rem,   // 16px
+  lg: 1.125rem, // 18px
+  xl: 1.25rem,   // 20px
+  5xl: 3.75rem   // 60px
+);
+
+// Generate text size utility classes: .text-sm, .text-base, .text-lg, etc.
+@mixin generate-text-utilities($map, $prefix: 'text') {
+  @each $name, $value in $map {
+    .#{$prefix}-#{$name} {
+      font-size: $value !important;
+    }
+  }
+}
+
+@include generate-text-utilities($font-size-scale, 'text');
