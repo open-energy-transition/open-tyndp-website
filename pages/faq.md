@@ -61,7 +61,7 @@ Open an issue or pull request on [GitHub](https://github.com/open-energy-transit
 
 Open-TYNDP is funded by [Breakthrough Energy](https://breakthroughenergy.org), [QCF](https://www.qc.foundation/), and other philanthropies, with previous support from [Google.org](https://google.org).
 
-Open-TYNDP is developed and maintained by [Open Energy Transition (OET)](https://openenergytransition.org) in collaboration with ENTSO-E. As an open-source project, contributions from the wider community are welcome. Anyone can propose improvements, report issues, or extend the tool's functionality via the [GitHub repository](https://github.com/open-energy-transition/open-tyndp).
+Open-TYNDP is developed and maintained by [Open Energy Transition (OET)](https://openenergytransition.org). As an open-source project, contributions from the wider community are welcome. Anyone can propose improvements, report issues, or extend the tool's functionality via the [GitHub repository](https://github.com/open-energy-transition/open-tyndp).
 
 ## What Tools Is This Website Built With?
 
