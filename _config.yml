@@ -11,7 +11,7 @@ title: "Open-TYNDP"
 logo: "/assets/images/oet-logo-red.svg"
 subtitle: "Open-Source European Transmission Planning"
 description: "Open-source energy system model for the ENTSO-E Ten-Year Network Development Plan, built on PyPSA-Eur."
-# url: "https://open-tyndp.openenergytransition.org"  # uncomment when custom domain is configured
+url: "https://open-tyndp.openenergytransition.org"
 baseurl: ""
 
 # === SKIN ===
