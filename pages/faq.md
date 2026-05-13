@@ -26,9 +26,9 @@ the workflow will get the same outputs. It also means the entire modelling proce
 documented in code rather than in manual steps that are hard to audit.
 
 
-## Is Open-TYNDP a Replacement for ENTSO-E's TYNDP Process?
+## Is Open-TYNDP a Replacement for ENTSO-E's TYNDP 2024 Process?
 
-No. Open-TYNDP is designed as a complementary, transparent tool that enables independent benchmarking and scenario testing independently from the official TYNDP process. It focuses on replicating Scenarios Building and Cost Benefit Analysis of the TYNDP 2024. It is built to strengthen — not replace — ENTSO-E’s planning process.
+No. Open-TYNDP is designed as a complementary, transparent tool that enables independent benchmarking and scenario testing independently of the official TYNDP process. It focuses on replicating Scenario Building and Cost Benefit Analysis of the TYNDP 2024. It is built to strengthen — not replace — ENTSO-E’s planning process.
 
 ## How Does Open-TYNDP Relate to [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/)?
 
@@ -61,7 +61,7 @@ Open an issue or pull request on [GitHub](https://github.com/open-energy-transit
 
 Open-TYNDP is funded by [Breakthrough Energy](https://breakthroughenergy.org), [QCF](https://www.qc.foundation/), and other philanthropies, with previous support from [Google.org](https://google.org).
 
-Open-TYNDP is developed and maintained by [Open Energy Transition (OET)](https://openenergytransition.org). As an open-source project, contributions from the wider community are welcome. Anyone can propose improvements, report issues, or extend the tool's functionality via the [GitHub repository](https://github.com/open-energy-transition/open-tyndp).
+Open-TYNDP is developed and maintained by [Open Energy Transition (OET)](https://openenergytransition.org). It is an open-source, exploratory project in collaboration with ENTSO-E, contributions from the wider community are welcome. Anyone can propose improvements, report issues, or extend the tool's functionality via the [GitHub repository](https://github.com/open-energy-transition/open-tyndp).
 
 ## What Tools Is This Website Built With?
 

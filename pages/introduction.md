@@ -11,35 +11,42 @@ Open-TYNDP is an open-source implementation following the ENTSO-E [TYNDP 2024 me
 
 ## What Is Open-TYNDP?
 
-Open-TYNDP is an open-source energy system model for the ENTSO-E Ten-Year Network Development Plan (TYNDP), developed by [Open Energy Transition (OET)](https://openenergytransition.org) in collaboration with ENTSO-E. It is built on [PyPSA-Eur](https://github.com/PyPSA/pypsa-eur), adapted to the TYNDP 2024 methodology and input data. It focuses on two blocks of TYNDP 2024: Scenario Building and Cost Benefit Analysis.
+Open-TYNDP is an open-source energy system model for the ENTSO-E Ten-Year Network Development Plan (TYNDP), developed and maintained by [Open Energy Transition (OET)](https://openenergytransition.org) in dialogue with ENTSO-E. It is built on [PyPSA-Eur](https://github.com/PyPSA/pypsa-eur), adapted to the TYNDP 2024 methodology and input data. It focuses on two blocks of TYNDP 2024: Scenario Building and Cost Benefit Analysis.
 
 
 ## What Did We Do?
 
-- Exploratory study in coordination with ENTSO-E, for replicating TYNDP Scenario Building 2024 and Cost Benefit Analysis 2024
+- Exploratory study in coordination with ENTSO-E, for producing TYNDP Scenario Building 2024 and Cost Benefit Analysis 2024 in an open-source framework
 - Soft-forked [PyPSA-Eur](https://github.com/PyPSA/pypsa-eur) and adapted its methodology, assumptions, and input data to align with TYNDP 2024
 - Implemented TYNDP-specific scenario logic, demand projections, and network topology
-- Benchmarked model outcomes against ENTSO-E reference data for the National Trends (NT) scenario, using 2009 as the reference climate year
+- Benchmarked model outcomes for Scenario Building and Cost Benefit Analysis against ENTSO-E reference data for the National Trends (NT) scenario, using 2009 as the reference climate year for the Scenario Building.
 
 ## Results
 
 - Capacity, generation mix, network flows, cross-border flows, and marginal prices can be explored interactively on the [Results](/results/) page
-- Open-TYNDP outcomes are benchmarked against ENTSO-E reference outputs — remaining deviations are documented and traceable to specific modeling choices
+- Open-TYNDP outcomes are benchmarked against ENTSO-E reference outputs — remaining deviations are documented and traceable to specific modelling choices that are often tool specific
 
 ## Where Can Open-TYNDP Help?
 
 - **Transparency** — not only assumption and input are visible and auditable, but also the models.
 - **Reproducibility** — any stakeholder is able to re-run TYNDP 2024 National Trends scenario independently.
-- **Additional resource** — allow for broader expert contribution.
+- **Additional resource** — allows for broader expert contribution.
 - **Automated workflow** — The entire modelling process runs automatically, from raw inputs to final outputs
 
-## What Can People Do with Open-TYNDP?
+## Who Benefits from This?
 
-- Independently reproduce and examine official TYNDP 2024 National Trends scenario
+- **TSO planners** — additional open-source alternative for grid investment scenarios and sensitivity analysis
+- **ENTSO-E leadership** — broader benchmarking of TYNDP results builds process legitimacy
+- **Researchers & policymakers** — full access to a pan-European model calibrated to TYNDP 2024 data
+- **Grid planners beyond Europe** — the same methodology can be applied to regional data, making Open-TYNDP a reusable framework for sharing the know-how and experience of the TSOs performing the TYNDP
+
+## What Can People Do with the Open-TYNDP?
+
+- Independently reproduce and examine TYNDP 2024 National Trends scenario based on published data from ENTSO-E
 - Test custom scenarios (e.g. alternative demand or RES assumptions) without starting from scratch
-- Directly compare open-source model results for TYNDP 2024 with ENTSO-E outputs in a transparent framework
+- Directly compare open-source PyPSA model results with ENTSO-E outputs in a transparent framework
 - Build on a common, community-maintained European planning model
-- Collaborate across organisations and institutions using a shared, open codebase
+- Collaborate more easily across organisations and institutions using a shared, open codebase
 - Benefit from the continuous developments and features of an open-source framework, driven by a broad community of researchers and practitioners
 
 ## Code & Data Availability
