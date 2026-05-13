@@ -7,11 +7,11 @@ Files: pages/*.md _includes/*.html index.html _config.yml _data/*.yml Gemfile Ge
 Copyright: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
 License: MIT
 
-Files: assets/images/*.png assets/images/*.svg
+Files: assets/images/*
 Copyright: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
 License: MIT
 
-Files: .github/deploy/deploy.yml .github/workflows/pre-commit.yaml
+Files: .github/workflows/*.yml .github/workflows/*.yaml
 Copyright: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
 License: MIT
 

@@ -1,5 +1,5 @@
 [workspace]
-name = "open-tyndp-website"
+name = "open-tyndp-site"
 description = "Open-TYNDP project website (Jekyll + Minimal Mistakes)"
 version = "0.1.0"
 channels = ["conda-forge"]
@@ -7,6 +7,8 @@ platforms = ["linux-64", "osx-arm64", "osx-64"]
 
 [dependencies]
 ruby = ">=3.2,<3.4"
+pre-commit = "*"
+pandoc = "*"
 # Required to compile native Ruby gems (e.g. nokogiri, sassc)
 gcc = "*"
 gxx = "*"
@@ -17,11 +19,23 @@ make = "*"
 # Install Ruby gems via Bundler
 install = "bundle install"
 
+# Download website assets/graphics from the public Open-TYNDP data store (on Google Cloud Platform).
+# The default version is "latest", but it can be overridden, for example:
+# ASSETS_VERSION=20260424 pixi run fetch-graphics
+fetch-graphics = { cmd = "SSL_CERT_FILE=\"$CONDA_PREFIX/ssl/cert.pem\" python scripts/fetch_graphics.py" }
+
 # Serve the site locally at http://localhost:4000
-serve = { cmd = "SSL_CERT_FILE=\"$CONDA_PREFIX/ssl/cert.pem\" bundle exec jekyll serve --baseurl ''", depends-on = ["install"] }
+serve = { cmd = "SSL_CERT_FILE=\"$CONDA_PREFIX/ssl/cert.pem\" bundle exec jekyll serve --baseurl ''", depends-on = ["install", "fetch-graphics"] }
+
+# Serve without fetching remote assets (useful offline or when assets are already present)
+serve-local = { cmd = "SSL_CERT_FILE=\"$CONDA_PREFIX/ssl/cert.pem\" bundle exec jekyll serve --baseurl ''", depends-on = ["install"] }
 
 # Build the site into _site/
-build = { cmd = "SSL_CERT_FILE=\"$CONDA_PREFIX/ssl/cert.pem\" bundle exec jekyll build", depends-on = ["install"] }
+build = { cmd = "SSL_CERT_FILE=\"$CONDA_PREFIX/ssl/cert.pem\" bundle exec jekyll build", depends-on = ["install", "fetch-graphics"] }
 
 # Clean the build output
 clean = "rm -rf _site .jekyll-cache"
+
+# Export the site as a self-contained offline bundle (site-export.zip)
+# Requires httrack to be installed: sudo apt install httrack (Linux) / brew install httrack (macOS)
+export = { cmd = "bash export.sh", depends-on = ["install", "fetch-graphics"] }

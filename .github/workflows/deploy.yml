@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp-site>
+#
+# SPDX-License-Identifier: MIT
+
 name: Deploy Jekyll to GitHub Pages
 
 on:
@@ -24,8 +28,13 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2'
+        ruby-version: "3.2"
         bundler-cache: true
+
+    - name: Fetch website assets/graphics from Google Cloud Storage
+      run: python3 scripts/fetch_graphics.py
+      env:
+        ASSETS_VERSION: latest
 
     - name: Setup Pages
       id: pages
