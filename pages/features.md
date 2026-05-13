@@ -43,7 +43,7 @@ Offshore grid modelling is available in Open-TYNDP and can be activated via `off
 
 ### Additional Offshore Modelling Options in PyPSA-Eur
 
-Beyond the TYNDP 2024 methodology, [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/)supports offshore grid modelling at higher
+Beyond the TYNDP 2024 methodology, [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) supports offshore grid modelling at higher
 spatial resolution with fully meshed grids, enabling a more detailed analysis of offshore
 wind integration and infrastructure trade-offs.
 
