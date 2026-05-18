@@ -11,7 +11,7 @@ The National Trends (NT) scenario presented here reflects the TYNDP 2024 methodo
 
 [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) is an open-source energy system model with an active development community, widely used across academia, industry, NGOs, and policy institutions, including transmission system operators, research institutes, and consultancies, with a track record of peer-reviewed research across a wide range of European energy scenarios. The features described here are already fully implemented in [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/), providing a strong foundation. For each feature, we describe the current [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) implementation and, where applicable, the adaptations required to align it with TYNDP methodology within Open-TYNDP. Several features, including offshore grid modelling, split hydrogen zones, and electric vehicle modelling, are already fully available in Open-TYNDP and can be activated through configuration. Others, such as hybrid heating and synthetic fuels, are implemented in [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) but would require further adaptation to align with TYNDP methodology.
 
-## Offshore Grid Modelling
+## Offshore grid modelling
 
 A key innovation in TYNDP 2024 for the DE and GA scenarios was the move away from modelling offshore wind as simple
 radial connections to onshore markets. Instead, the European offshore territory is divided
@@ -41,7 +41,7 @@ Offshore grid modelling is available in Open-TYNDP and can be activated via `off
   Offshore hub infrastructure as defined in TYNDP 2024 (left) and as implemented in Open-TYNDP (right).
 </p>
 
-### Additional Offshore Modelling Options in PyPSA-Eur
+### Additional offshore modelling options in PyPSA-Eur
 
 Beyond the TYNDP 2024 methodology, [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) supports offshore grid modelling at higher
 spatial resolution with fully meshed grids, enabling a more detailed analysis of offshore
@@ -72,7 +72,7 @@ Read the full publication:
 > **Note:** Fully meshed offshore grids have been developed and demonstrated in peer-reviewed research using PyPSA-Eur. The code is available but not yet part of the main branch.
 
 
-## Split H₂ Zones
+## Split H₂ zones
 
 In TYNDP 2024, hydrogen demand and supply are modelled across two distinct zones that
 reflect different stages of hydrogen market development in Europe.
@@ -94,7 +94,7 @@ price-driven dynamics of a mature hydrogen market, analogous to today's electric
 Open-TYNDP implements this two-zone hydrogen structure in full, following the TYNDP 2024
 methodology. It can be activated via `h2_zones_tyndp: true`.
 
-### Additional Hydrogen Modelling Options in PyPSA-Eur
+### Additional hydrogen modelling options in PyPSA-Eur
 
 Beyond the two-zone TYNDP 2024 methodology, PyPSA-Eur supports hydrogen network modelling at higher spatial resolution, enabling a more detailed analysis of infrastructure trade-offs. This includes endogenous optimisation of hydrogen pipeline expansion as well as retrofitting existing natural gas pipelines for hydrogen transport, capturing both the costs and the path-dependency of transitioning existing gas infrastructure. Underground storage potentials (e.g. salt caverns) are also resolved geographically.
 
@@ -120,7 +120,7 @@ Read the full publications:
 [Forschungsstelle für Energiewirtschaft et al. (2024): "European Hydrogen Infrastructure Planning — Insights from the TransHyDE Project System Analysis" →](https://www.wasserstoff-leitprojekte.de/lw_resource/datapool/systemfiles/elements/files/148FFEF003673B67E0637E695E8625E5/live/document/20240321_European_Hydrogen_Infrastructure_Planning.pdf)
 {: .notice--info}
 
-## Electric Vehicles
+## Electric vehicles
 
 Electric vehicles are modelled as flexible batteries that interact with the electricity grid, capturing both the additional demand from road transport electrification and the system value of smart charging and vehicle-to-grid (V2G) capability.
 
@@ -134,7 +134,7 @@ BEVs are modelled with vehicle-to-grid (V2G) capability, meaning a share of the 
 
 In the Open-TYNDP, all vehicles are currently assumed to charge via the distribution network. The TYNDP 2024 methodology additionally models a share of vehicles charging via transmission grid-connected street infrastructure, which is noted as a planned improvement.
 
-### Additional Land Transport Modelling Options in PyPSA-Eur
+### Additional land transport modelling options in PyPSA-Eur
 
 Beyond the assumed methodology in the Open-TYNDP 2024, [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) supports a more detailed representation of land transport that could be incorporated in future extensions of Open-TYNDP. This includes endogenous optimisation of vehicle type choices, a split between light- and heavy-duty transport, and country-specific vehicle fleet age distribution and fleet turnover. The fuel supply for internal combustion vehicles is also part of the optimisation, covering the full range of options: biofuels, electrofuels (e-fuels), synthetic fuels via Fischer-Tropsch synthesis, and conventional fossil fuels, allowing the model to determine the least-cost decarbonisation pathway across vehicle and fuel choices simultaneously. See the [innovation roadmap](https://open-tyndp.readthedocs.io/en/latest/innovation_roadmap.html) for planned developments.
 
@@ -158,7 +158,7 @@ Read the full publication:
 
 > **Note:** Additional land transport features have been developed and demonstrated in peer-reviewed research using PyPSA-Eur. The code is available but not yet part of the main branch.
 
-## Hybrid Heating
+## Hybrid heating
 
 Hybrid heating combines a heat pump with a backup boiler running on gas or hydrogen, providing flexibility to meet peak heat demand while minimising emissions under different decarbonisation pathways.
 
@@ -166,7 +166,7 @@ Hybrid heating combines a heat pump with a backup boiler running on gas or hydro
 
 Hybrid heating modelling is not yet implemented in Open-TYNDP, but the integration is planned following the TYNDP 2024 methodology. The TYNDP approach models hybrid heating as a combination of a heat pump and a backup boiler, running either with gas or hydrogen, with capacities set to meet peak heat demand, country-specific coefficient of performance for the heat pumps based on the climate year, and boiler efficiencies of 93%. Heating demand is prescribed as fixed inputs rather than optimised. See the relevant [issue](https://github.com/open-energy-transition/open-tyndp/issues/380) for the ongoing discussion on implementation.
 
-### Additional Heating Modelling Options in PyPSA-Eur
+### Additional heating modelling options in PyPSA-Eur
 
 While aligning with the TYNDP 2024 methodology ensures comparability with the market model, the underlying [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) framework offers a more comprehensive heating sector representation worth considering for future iterations. Rather than prescribing technology dispatch as fixed inputs, PyPSA-Eur optimises the full technology mix, including heat pumps, gas boilers, hybrid heating, combined heat and power (CHP), solar thermal, and resistive heating, endogenously for least-cost supply. Coeefficient of Performance (COPs) for different heat pump types are calculated directly from heating degree days rather than taken from an external model, ensuring consistency with the climate and weather data used throughout the rest of the model. Demand is further disaggregated into residential and service sectors, split between urban and rural areas, and between individual and district heating systems, capturing the full interaction between the heating sector and the electricity and gas systems. Building renovation can also be included as an additional degree of freedom, allowing the model to optimise insulation investments alongside energy supply. See the [innovation roadmap](https://open-tyndp.readthedocs.io/en/latest/innovation_roadmap.html) for further information.
 
@@ -194,7 +194,7 @@ Read the full publications:
 [Franken, Zeyen, Angelidis, Brown & Friedrich (2025): "Market Integration Pathways for Enhanced Geothermal Systems in Europe", *arXiv* →](https://doi.org/10.48550/arXiv.2501.06600)
 {: .notice--info}
 
-## Synthetic Fuels
+## Synthetic fuels
 
 Synthetic fuels, including e-kerosene, e-diesel, and synthetic natural gas (SNG), are produced from renewable electricity and green hydrogen, and are critical for decarbonising hard-to-electrify sectors such as aviation, shipping, and parts of industry.
 
@@ -202,7 +202,7 @@ Synthetic fuels, including e-kerosene, e-diesel, and synthetic natural gas (SNG)
 
 Synthetic fuel modelling is not yet implemented in Open-TYNDP, but integration is planned in line with the TYNDP 2024 methodology. The TYNDP approach prescribes fixed exogenous demand for e-kerosene, e-diesel, and SNG rather than optimising their production endogenously. Aligning with this methodology would require introducing three additional buses representing these fuel streams, with supply and demand balanced according to the TYNDP assumptions. See the relevant [issue](https://github.com/open-energy-transition/open-tyndp/issues/393) for the ongoing discussion on implementation.
 
-### Additional Synthetic Fuels Modelling Options in PyPSA-Eur
+### Additional synthetic fuels modelling options in PyPSA-Eur
 
 Beyond the TYNDP 2024 methodology, [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) models synthetic fuel production as part of the system-wide optimisation rather than as fixed inputs. Demand for SNG, e-diesel, e-kerosene, and other power-to-X products is met through least-cost pathways determined endogenously by the model. The full CO₂ management chain is explicitly modelled, including sourcing carbon feedstocks for synthetic fuel production from point-source capture, direct air capture, or biogenic sources. For example, fuel for internal combustion vehicles can be supplied through any combination of biofuels, electrofuels, synthetic fuels via Fischer-Tropsch synthesis, or conventional fossil fuels — with the model optimising across all options simultaneously. Imports of synthetic fuels and green steel can also be included, allowing the model to assess the role of global supply chains in meeting Europe's decarbonisation targets.
 
@@ -225,7 +225,7 @@ Read the full publications:
 [Glaum, Neumann, Millinger & Brown (2025): "A Minimal Methanol Backstop for High Electrification Scenarios", *arXiv* →](https://doi.org/10.48550/arXiv.2505.09277)
 {: .notice--info}
 
-## Cross-Sectoral Planning and Sector Coupling
+## Cross-sectoral planning and sector coupling
 
 Cross-sectoral planning is an evolving area in European energy infrastructure assessment, with increasing interest in more tightly coupled multi-carrier modelling. Sector coupling, the explicit modelling of linkages between electricity, heat, hydrogen, methane, biomass, and CO₂, is essential for understanding how decarbonisation pathways in one sector affect costs and infrastructure needs in others. This capability is already fully present in the PyPSA-Eur framework.
 
@@ -234,7 +234,7 @@ Cross-sectoral planning is an evolving area in European energy infrastructure as
 Open-TYNDP inherits PyPSA-Eur's full sector-coupling architecture, enabling simultaneous optimisation across electricity, hydrogen, methane, biomass, and CO₂, including sequestration. Every region is represented by a set of buses for different energy carriers, connected within regions via conversion technologies (e.g. electrolysers, heat pumps) and across regions via transmission infrastructure. Some energy carriers, such as CO₂, are implemented as "copper plates" to align with the TYNDP 2024 methodology.
 
 
-### Sector Coupling in PyPSA-Eur — Applications and Research
+### Sector coupling in PyPSA-Eur — applications and research
 
 PyPSA-Eur's sector-coupling capabilities have been applied by transmission system operators, research institutions, and the European Commission for long-term infrastructure planning and policy analysis.
 

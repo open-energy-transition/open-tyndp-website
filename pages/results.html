@@ -9,11 +9,11 @@ toc_icon: "chart-bar"
 
 <p>This page presents Open-TYNDP assumptions and outcomes for the Scenario Building of the National Trends (NT) scenario, climate year 2009. The input data covers reference grids, final energy demand, capacity factors and installed capacities, all aligned to TYNDP 2024 inputs and assumptions. The model then produces optimised supply, transmission, and marginal prices for both electricity and hydrogen — explore them interactively below.</p>
 
-<p>Open-TYNDP outcomes are benchmarked with ENTSO-E reference data. Aggregated EU27 comparisons are shown on this page; per-country and per bidding zone results, including marginal prices, cross-border flows, generation, and installed capacities, are available for download from our <a href="https://doi.org/10.5281/zenodo.18608105">Zenodo repository</a>. For this proof of concept, the primary benchmark comparison is between Open-TYNDP and the Market Model output files. The final Scenario Report figures provide additional context, but are the result of further data processing and aggregation steps applied to the Market Model outputs. This introduces differences between the Market Model data and the Scenario Report.</p>
+<p>Open-TYNDP outcomes are benchmarked with ENTSO-E reference data. Aggregated EU27 comparisons are shown on this page; per-country and per bidding zone results, including marginal prices, cross-border flows, generation, and installed capacities, are available for download from Open Energy Transition's <a href="https://doi.org/10.5281/zenodo.18608105">Zenodo repository</a>. For this proof of concept, the primary benchmark comparison is between Open-TYNDP and the Market Model output files. The final Scenario Report figures provide additional context, but are the result of further data processing and aggregation steps applied to the Market Model outputs. This introduces differences between the Market Model data and the Scenario Report.</p>
 
 <hr>
 
-<h2 id="input-data">Input Data</h2>
+<h2 id="input-data">Input data</h2>
 
 <p>The following publicly available datasets are used as input to Open-TYNDP and as benchmarking references throughout this page:</p>
 
@@ -27,7 +27,7 @@ toc_icon: "chart-bar"
 
 <p>For the purposes of this proof of concept, the primary benchmark comparison is made between the Market Model output files and Open-TYNDP.</p>
 
-<h3 id="reference-grids">Reference Grids</h3>
+<h3 id="reference-grids">Reference grids</h3>
 
 <p>The interactive map shows the reference grid for 2030 and 2040 for both electricity and hydrogen. Use the toggle below to switch between the two energy carriers and the two planning horizons.</p>
 
@@ -84,7 +84,7 @@ toc_icon: "chart-bar"
   });
 </script>
 
-<h3 id="installed-capacities">Installed Capacities</h3>
+<h3 id="installed-capacities">Installed capacities</h3>
 
 
 
@@ -117,7 +117,7 @@ assumption versioning. For <strong>methane demand</strong>, gas demand figures a
 
 <hr>
 
-<h2 id="power-supply">Power Supply</h2>
+<h2 id="power-supply">Power supply</h2>
 
 <p>The map gives a pan-European view of the optimised electricity system for the National Trends scenario. Each circle shows generation (upper half) and consumption (lower half) per node, with arrows indicating net annual cross-border flows and background colours reflecting marginal electricity prices. All variables are outcomes of the Open-TYNDP optimisation. Hover over individual nodes to explore the mix in detail.</p>
 
@@ -151,7 +151,7 @@ assumption versioning. For <strong>methane demand</strong>, gas demand figures a
   });
 </script>
 
-<h3 id="electricity-generation">Electricity Generation — Open-TYNDP vs. Market Output vs. TYNDP Report</h3>
+<h3 id="electricity-generation">Electricity generation — Open-TYNDP vs. Market Output vs. TYNDP Report</h3>
 
 <p>Overall, Open-TYNDP generation closely matches the TYNDP 2024 reference outputs. The following differences are traceable to specific modelling choices or data availability constraints. Per-country comparison plots are available on <a href="https://doi.org/10.5281/zenodo.18608105">Zenodo</a>.</p>
 
@@ -199,11 +199,11 @@ assumption versioning. For <strong>methane demand</strong>, gas demand figures a
 
 <hr>
 
-<h2 id="hydrogen-supply">Hydrogen Supply</h2>
+<h2 id="hydrogen-supply">Hydrogen supply</h2>
 
 <p>The map gives a pan-European view of the optimised hydrogen system. Hydrogen can be produced via electrolysis (green), steam methane reforming (SMR) (grey), steam methane reforming with carbon capture and storage (SMR with CCS) (blue), or imported. The mix at each node is determined by the optimisation. Each circle shows hydrogen supply (upper half) and consumption (lower half) per node, with arrows indicating net annual cross-border flows and background colours reflecting marginal hydrogen prices. Consumption includes both exogenous hydrogen demand from the TYNDP and endogenous use for hydrogen-to-power, optimised jointly with the electricity system.</p>
 
-<p>In the standard <a href="https://pypsa-eur.readthedocs.io/en/latest/">PyPSA-Eur</a> framework, hydrogen demands are not given exogenously but compete with other energy carriers to meet transport or industry demand. In Open-TYNDP, this has been adapted to align more closely with TYNDP 2024 assumptions, but could in the future be reverted to make use of the full sector-coupled capabilities (further details in our <a href="https://open-tyndp.readthedocs.io/en/latest/innovation_roadmap.html">innovation roadmap</a>).</p>
+<p>In the standard <a href="https://pypsa-eur.readthedocs.io/en/latest/">PyPSA-Eur</a> framework, hydrogen demands are not given exogenously but compete with other energy carriers to meet transport or industry demand. In Open-TYNDP, this has been adapted to align more closely with TYNDP 2024 assumptions, but could in the future be reverted to make use of the full sector-coupled capabilities (further details in the Open-TYNDP <a href="https://open-tyndp.readthedocs.io/en/latest/innovation_roadmap.html">innovation roadmap</a>).</p>
 
 
 <div class="year-switcher">
@@ -252,7 +252,7 @@ assumption versioning. For <strong>methane demand</strong>, gas demand figures a
 </div>
 <p style="font-size: 0.85em; margin-top: 0.25rem;"><strong>Note:</strong> In Open-TYNDP, hydrogen power plants are directly connected to the hydrogen market. The Market Model assumes a fixed hydrogen fuel price.</p>
 
-<h3 id="hydrogen-time-series">Hydrogen Time Series</h3>
+<h3 id="hydrogen-time-series">Hydrogen time series</h3>
 
 
 <div class="year-switcher">

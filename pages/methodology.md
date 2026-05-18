@@ -7,7 +7,7 @@ toc_label: "Contents"
 toc_icon: "list"
 ---
 
-## Overview for Policy and Planning Stakeholders
+## Overview for policy and planning stakeholders
 
 Open-TYNDP is an open-source energy system model that implements the [TYNDP 2024](https://www.entsoe.eu/outlooks/tyndp/2024/) methodology in a similar way to what has been developed within the ENTSO-E TYNDP process under multiple, proprietary and open-source, tools. It is developed by [Open Energy Transition](https://openenergytransition.org/) and the project is in coordination with ENTSO-E. It portrays an additional open-source environment while disseminating, to the extent possible, the TSOs' experience accumulated over several years of collaborating within ENTSO-E on delivering the TYNDP. This page explains how the model works and what it offers to stakeholders involved in European energy infrastructure planning.
 
@@ -21,7 +21,7 @@ Open-TYNDP is an open-source energy system model that implements the [TYNDP 2024
 
 **Rigorous benchmarking**: Open-TYNDP is benchmarked systematically against TYNDP 2024 reference data for the NT scenario to demonstrate that its outcomes are directionally consistent with the established TYNDP methodology. Benchmarking outcomes are discussed in the [Results](/results/) section.
 
-## Input Data & General Process
+## Input data & general process
 
 Open-TYNDP is built on [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/), a free and open-source European energy system model developed and maintained by a broad international research community. Open-TYNDP is a soft-fork of PyPSA-Eur, adapted to align with the [TYNDP 2024](https://www.entsoe.eu/outlooks/tyndp/2024/) methodology, assumptions, and input data. This means it inherits the full modelling framework of PyPSA-Eur, including the optimisation structure, network representation, and sector-coupling capabilities, while replacing or adjusting specific inputs and assumptions to match the TYNDP 2024 reference scenario.
 
@@ -240,25 +240,25 @@ Public input data from ENTSO-E as well as the values observed in the Market Mode
 Results are benchmarked against ENTSO-E reference data for the National Trends (NT) scenario, climate year 2009.
 
 
-### What Is Benchmarking?
+### What is benchmarking?
 
 Benchmarking is a structured approach to comparing the outcomes of two or more models. For Open-TYNDP, it provides a reproducible and automated way to compare outcomes against those from the TYNDP 2024, measure discrepancies, and trace their causes to specific modelling choices or input differences, inherent or not to the specific tools used.
 
 Benchmarking was monitored continuously during the development phase of Open-TYNDP.
-The OET team introduced benchmarking statistics to Open-TYNDP to
+The Open Energy Transition (OET) team introduced benchmarking statistics to Open-TYNDP to
 systematically measure differences between Open-TYNDP results and those from TYNDP 2024.
 This allowed the team to identify how development actions,
 such as aligning inputs and integrating new data sources,
 closed the discrepancy between Open-TYNDP and TYNDP 2024 results.
 
-### Why Is Benchmarking Important?
+### Why is benchmarking important?
 
 Open-TYNDP is built entirely on publicly available data and open-source tools. Every assumption, input, and calculation is auditable, version-controlled, and reproducible. Benchmarking is how we demonstrate that this transparency does not come at the cost of accuracy: the goal is to show that an open-source modelling workflow can produce outcomes that are directionally consistent with TYNDP 2024 and therefore robust enough to support strategic planning discussions.
 
 This matters because open-source energy system models, despite wide adoption in research and academia, are still underused in industry and regulatory contexts. Rigorous benchmarking against established reference data builds the evidence base that industry stakeholders need to trust and adopt open models with confidence.
 
 
-### What Results Did You Benchmark For The Open-TYNDP Model?
+### What results did you benchmark for the Open-TYNDP model?
 
 Open-TYNDP outcomes are benchmarked against ENTSO-E reference data for the National Trends (NT) scenario, climate year 2009. The following outputs were benchmarked:
 
@@ -270,7 +270,7 @@ Open-TYNDP outcomes are benchmarked against ENTSO-E reference data for the Natio
 
 Benchmarking outcomes are published with every release on [Zenodo](https://doi.org/10.5281/zenodo.18608105).
 
-### Reference Data Sources
+### Reference data sources
 
 Open-TYNDP is benchmarked against publicly available data,
 such as that shared by ENTSO-E on the TYNDP
@@ -282,13 +282,13 @@ Specific data sources used to benchmark Open-TYNDP results against include:
 - [Market model output files](https://2024.entsos-tyndp-scenarios.eu/download/)
 - [TYNDP 2024 Visualisation platform data](https://2024.entsos-tyndp-scenarios.eu/visualisation-platform/)
 
-### What Happens If The Results Do Not Match?
+### What happens if the results do not match?
 
 All remaining deviations between Open-TYNDP and ENTSO-E reference results are documented
 and traceable to specific modelling choices.
 These are discussed in detail in the [Results](/results/) section.
 
-### What Input Data Is Used And How Does This Affect The Results?
+### What input data is used and how does this affect the results?
 
 All input data used in Open-TYNDP is documented and version-controlled. Key inputs include reference grids for electricity and hydrogen, final energy demands by sector and country, and installed capacity assumptions per TYNDP scenario.
 
