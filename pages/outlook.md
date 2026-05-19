@@ -7,7 +7,7 @@ toc_label: "Roadmap"
 toc_icon: "road"
 ---
 
-## Overview for policy and planning stakeholders
+## Summary for Policy and Planning Stakeholders
 
 Open-TYNDP is developed by [Open Energy Transition](https://openenergytransition.org/) to strengthen European energy infrastructure planning through open, reproducible, and auditable modelling. It enables ENTSO-E and its member TSOs to make every assumption, input, and modelling step openly accessible via an additional open source platform for European studies. Therefore, Open-TYNDP allows TSOs, regulators, researchers, and other stakeholders to understand and build confidence in model outcomes and to contribute more efficiently in the planning process.
 
@@ -15,7 +15,13 @@ Open-TYNDP potentially complements ENTSO-E’s existing suite of tools as an add
 
 This page gives an overview of where Open-TYNDP is heading. It covers three areas: the **innovation roadmap**, which tracks planned improvements to align Open-TYNDP with the evolving TYNDP methodology; the **integrated model builder**, which explains how Open-TYNDP currently automates the full workflow from raw data to final results in a single terminal command; and **advanced modelling capabilities** already available in the underlying framework that could support more robust and comprehensive infrastructure planning in the future.
 
-## Innovation roadmap
+## Summary for Funders
+
+[Open Energy Transition](https://openenergytransition.org/)'s successful benchmarking of the Open-TYNDP modelling workflow provides further evidence that open source tools meet the delivery requirements of the energy industry.
+However, much work remains to improve usability of open source tools, as well as to work with industry to create the conditions for widespread adoption.
+If you are interested in supporting Open Energy Transition achieve its [mission](https://www.openenergytransition.org/about-us#theory-of-change), [get in touch](mailto:info@openenergytransition.org).
+
+## Innovation Roadmap
 
 The Open-TYNDP innovation roadmap is structured to directly reflect the evolution of the TYNDP process itself. It compares the current and upcoming features of the Open-TYNDP workflow, including those already implemented in the underlying PyPSA-Eur framework, against the **TYNDP Innovation Roadmap**, which lists desirable features for the 2026 TYNDP cycle. This means Open-TYNDP development is guided by the official process, ensuring the open-source alternative stays relevant and complementary as methodology requirements evolve. The full roadmap is maintained in the documentation:
 [open-tyndp.readthedocs.io ↗](https://open-tyndp.readthedocs.io/en/latest/innovation_roadmap.html)
