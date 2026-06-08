@@ -66,3 +66,13 @@ Open-TYNDP is developed and maintained by [Open Energy Transition (OET)](https:/
 ## What tools is this website built with?
 
 This website is built with [Jekyll](https://jekyllrb.com) using the [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/) theme.
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PQV9MZ7EQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4PQV9MZ7EQ');
+</script>

@@ -71,4 +71,15 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - assets_v2
   - vendor
+  - site-export
+  - .pixi
+
+# === SILENCE WARNINGS ===
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - mixed

@@ -296,3 +296,13 @@ Much of the work of developing Open-TYNDP was integrating these publicly availab
 [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) workflow.
 
 [^1]: Solvers are external to the model and chosen by the user. The framework is solver-agnostic by design.
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PQV9MZ7EQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4PQV9MZ7EQ');
+</script>

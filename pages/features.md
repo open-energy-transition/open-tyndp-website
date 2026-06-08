@@ -299,3 +299,13 @@ Read the full publications and reports:
 
 [Hofmann, Tries, Neumann, Zeyen & Brown (2025): "H2 and CO2 network strategies for the European energy system", *Nature Energy*, Vol. 10 →](https://doi.org/10.1038/s41560-025-01752-6)
 {: .notice--info}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PQV9MZ7EQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4PQV9MZ7EQ');
+</script>

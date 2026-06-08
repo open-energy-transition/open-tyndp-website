@@ -73,3 +73,13 @@ Open-TYNDP is intended for a range of users involved in energy system planning, 
 - Get started easily with the [documentation](https://open-tyndp.readthedocs.io) and hands-on [workshop notebooks](https://open-energy-transition.github.io/open-tyndp-workshops/intro.html)
 - [One-click Windows installer](https://github.com/open-energy-transition/open-tyndp/releases) available for easy setup
 - Input and output data archived on [Zenodo](https://doi.org/10.5281/zenodo.18608105) for full reproducibility
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PQV9MZ7EQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4PQV9MZ7EQ');
+</script>

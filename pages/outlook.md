@@ -87,3 +87,13 @@ As described in detail in the [Features](/features/#full-sector-coupling) sectio
 ## Open-source community benefits
 
 Open-TYNDP is built on PyPSA-Eur, which is actively developed by a broad community of researchers and practitioners. This means Open-TYNDP continuously benefits from upstream improvements in solver interfaces, network representation, and sector-coupling features — without additional development effort.
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PQV9MZ7EQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4PQV9MZ7EQ');
+</script>
