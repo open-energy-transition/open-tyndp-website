@@ -83,3 +83,10 @@ sass:
     - import
     - global-builtin
     - mixed
+
+# === ANALYTICS ===
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-4PQV9MZ7EQ"
+    anonymize_ip: false

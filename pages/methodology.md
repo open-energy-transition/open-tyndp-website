@@ -183,7 +183,7 @@ Public input data from ENTSO-E as well as the values observed in the Market Mode
   <g id="output-report">
     <a href="https://2024.entsos-tyndp-scenarios.eu/wp-content/uploads/2024/05/TYNDP_2024-Scenario-Report-Data-Figures_240522.xlsx" target="_blank">
       <rect x="754" y="155" width="192" height="50" rx="4" fill="#ffffff" stroke="#C0DD97" stroke-width="0.5"/>
-      <text x="764" y="174" font-size="11" fill="#3B6D11" font-family="'Poppins', sans-serif" text-decoration="underline">Final Scenario Report</text>
+      <text x="764" y="174" font-size="11" fill="#3B6D11" font-family="'Poppins', sans-serif" text-decoration="underline">Final Scenarios Report</text>
       <text x="764" y="192" font-size="10" fill="#666" font-family="'Poppins', sans-serif">EU27 annual aggregated</text>
     </a>
   </g>
@@ -201,7 +201,7 @@ Public input data from ENTSO-E as well as the values observed in the Market Mode
     <text x="764" y="284" font-size="10" fill="#5F5E5A" font-family="'Poppins', sans-serif">input assumptions (e.g. demand).</text>
     <text x="764" y="300" font-size="10" fill="#5F5E5A" font-family="'Poppins', sans-serif">For benchmarking on this website,</text>
     <text x="764" y="314" font-size="10" fill="#5F5E5A" font-family="'Poppins', sans-serif">only Market Model Output Files and</text>
-    <text x="764" y="328" font-size="10" fill="#5F5E5A" font-family="'Poppins', sans-serif">Scenario Report figures are used.</text>
+    <text x="764" y="328" font-size="10" fill="#5F5E5A" font-family="'Poppins', sans-serif">Scenarios Report figures are used.</text>
   </g>
 
   <!-- ARROWS -->
@@ -278,7 +278,7 @@ such as that shared by ENTSO-E on the TYNDP
 
 Specific data sources used to benchmark Open-TYNDP results against include:
 
-- [ENTSO-E TYNDP 2024 scenario report figures](https://2024-data.entsos-tyndp-scenarios.eu/files/reports/TYNDP-2024-Scenarios-Package-20250128.zip)
+- [ENTSO-E TYNDP 2024 Scenarios Report figures](https://2024-data.entsos-tyndp-scenarios.eu/files/reports/TYNDP-2024-Scenarios-Package-20250128.zip)
 - [Market model output files](https://2024.entsos-tyndp-scenarios.eu/download/)
 - [TYNDP 2024 Visualisation platform data](https://2024.entsos-tyndp-scenarios.eu/visualisation-platform/)
 
@@ -296,13 +296,3 @@ Much of the work of developing Open-TYNDP was integrating these publicly availab
 [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) workflow.
 
 [^1]: Solvers are external to the model and chosen by the user. The framework is solver-agnostic by design.
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PQV9MZ7EQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4PQV9MZ7EQ');
-</script>
