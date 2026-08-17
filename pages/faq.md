@@ -13,7 +13,7 @@ use, modify, and redistribute. Unlike proprietary software, where the code is hi
 access requires a licence, open-source tools are transparent by design. Anyone can inspect
 how the model works, verify its results, and build on top of it. For energy planning, this
 means regulators, researchers, and TSOs can independently verify modelling assumptions and
-outcomes.
+outcomes. Our [explainer video](https://youtu.be/YL3jibyEM9k) on "Open Energy Modelling" covers key concepts including "open source" and "open data".
 
 
 ## What is a "workflow" and why does it matter?
@@ -32,8 +32,11 @@ No. Open-TYNDP is designed as a complementary, transparent tool that enables ind
 
 ## How does Open-TYNDP relate to [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/)?
 
-Open-TYNDP is a soft-fork of [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/), adapted specifically to align with TYNDP 2024 methodology, input data, and network topology. It tracks upstream [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) developments and benefits from the broader PyPSA community.
+Open-TYNDP is a soft-fork of [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/), adapted specifically to align with TYNDP 2024 methodology, input data, and network topology. It tracks upstream [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) developments and benefits from the broader PyPSA community. Our [explainer video](https://youtu.be/Hh6Cnucq2FU) on energy systems modelling frameworks, algebraic modelling languages, workflows and models, covers how Open-TYNDP, PyPSA-Eur and PyPSA are related to one another.
 
+<div style="max-width: 800px; margin: 1em auto 1.5em auto;">
+  <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/Hh6Cnucq2FU?si=CC7mG2zYH-AUJDld" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## What is a "soft-fork"?
 

@@ -73,3 +73,4 @@ Open-TYNDP is intended for a range of users involved in energy system planning, 
 - Get started easily with the [documentation](https://open-tyndp.readthedocs.io) and hands-on [workshop notebooks](https://open-energy-transition.github.io/open-tyndp-workshops/intro.html)
 - [One-click Windows installer](https://github.com/open-energy-transition/open-tyndp/releases) available for easy setup
 - Input and output data archived on [Zenodo](https://doi.org/10.5281/zenodo.18608105) for full reproducibility
+- Understand core energy system modelling concepts surrounding the Open-TYNDP, such as frameworks and workflows, in our [explainer video](https://youtu.be/Hh6Cnucq2FU) and our [training material](https://zenodo.org/records/21721314)

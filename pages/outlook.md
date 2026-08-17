@@ -86,4 +86,8 @@ As described in detail in the [Features](/features/#full-sector-coupling) sectio
 
 ## Open-source community benefits
 
-Open-TYNDP is built on PyPSA-Eur, which is actively developed by a broad community of researchers and practitioners. This means Open-TYNDP continuously benefits from upstream improvements in solver interfaces, network representation, and sector-coupling features — without additional development effort.
+Open-TYNDP is built on PyPSA-Eur, which is actively developed by a broad community of researchers and practitioners. This means Open-TYNDP continuously benefits from upstream improvements in solver interfaces, network representation, and sector-coupling features — without additional development effort. If you want to get a clearer understanding around open source, open data, and the benefits, watch our explainer video on ["Open Energy Modelling"](https://youtu.be/YL3jibyEM9k), and our [training material](https://zenodo.org/records/21721169).
+
+<div style="max-width: 800px; margin: 1em auto 1.5em auto;">
+  <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/YL3jibyEM9k?si=FnX6dvIWQnktA8yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
