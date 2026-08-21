@@ -66,6 +66,10 @@ Open-TYNDP is intended for a range of users involved in energy system planning, 
 
 * **Grid planners beyond Europe** — the Open-TYNDP methodology can be applied to regional data, which makes it a reusable framework for sharing the know-how and experience of the TSOs performing the TYNDP.
 
+<div style="max-width: 800px; margin: 1em auto 1.5em auto;">
+  <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/FC95eGwh2uQ?si=dIsauY5bntk4Re6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Code & Data Availability
 
 - Fully open-source on [GitHub](https://github.com/open-energy-transition/open-tyndp)
