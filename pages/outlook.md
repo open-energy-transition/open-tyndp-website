@@ -24,7 +24,7 @@ If you are interested in supporting Open Energy Transition achieve its [mission]
 ## Innovation Roadmap
 
 The Open-TYNDP innovation roadmap is structured to directly reflect the evolution of the TYNDP process itself. It compares the current and upcoming features of the Open-TYNDP workflow, including those already implemented in the underlying PyPSA-Eur framework, against the **TYNDP Innovation Roadmap**, which lists desirable features for the 2026 TYNDP cycle. This means Open-TYNDP development is guided by the official process, ensuring the open-source alternative stays relevant and complementary as methodology requirements evolve. The full roadmap is maintained in the documentation:
-[open-tyndp.readthedocs.io ↗](https://open-tyndp.readthedocs.io/en/latest/innovation_roadmap.html)
+[open-tyndp.readthedocs.io ↗](https://open-tyndp.readthedocs.io/en/latest/innovation_roadmap/)
 
 ## Open-TYNDP as an integrated model builder
 
