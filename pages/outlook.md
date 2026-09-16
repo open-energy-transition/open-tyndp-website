@@ -26,6 +26,8 @@ If you are interested in supporting Open Energy Transition achieve its [mission]
 The Open-TYNDP innovation roadmap is structured to directly reflect the evolution of the TYNDP process itself. It compares the current and upcoming features of the Open-TYNDP workflow, including those already implemented in the underlying PyPSA-Eur framework, against the **TYNDP Innovation Roadmap**, which lists desirable features for the 2026 TYNDP cycle. This means Open-TYNDP development is guided by the official process, ensuring the open-source alternative stays relevant and complementary as methodology requirements evolve. The full roadmap is maintained in the documentation:
 [open-tyndp.readthedocs.io ↗](https://open-tyndp.readthedocs.io/en/latest/innovation_roadmap/)
 
+As part of this roadmap, Open Energy Transition is currently implementing the TYNDP 2026 data and methodology for Open-TYNDP, building on the TYNDP 2024 foundation described throughout this site.
+
 ## Open-TYNDP as an integrated model builder
 
 Open-TYNDP is not just an optimisation model. It is a complete, automated model builder powered by [Snakemake](https://snakemake.readthedocs.io/en/stable/). Currently, a single command in the terminal takes the full workflow from raw input data all the way through to fully optimised results and their visualisations, with no manual preprocessing or separate toolchain required.

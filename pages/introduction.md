@@ -11,6 +11,8 @@ Open-TYNDP is an open-source implementation following the ENTSO-E [TYNDP 2024 me
 It is a transparent and reproducible workflow, built for collaboration in the energy sector.
 This page explains why Open Energy Transition built it, what it is, how it works, and who it is for.
 
+Open Energy Transition continues to develop Open-TYNDP and is currently working on implementing the TYNDP 2026 data and methodology, building on the foundation that was created for TYNDP 2024.
+
 ## Why did Open Energy Transition build Open-TYNDP?
 
 The [TYNDP](https://tyndp.entsoe.eu/) guides billions of euros in European grid infrastructure investment — decisions that will shape the continent's energy system for decades. Getting these decisions right is critical for Europe's net-zero 2050 goals. Open-TYNDP makes this process open: a pan-European model calibrated to TYNDP 2024 data, available for independent audit and benchmarking.
@@ -30,7 +32,7 @@ It supports:
 Open-TYNDP is an open-source energy system model for the ENTSO-E Ten-Year Network Development Plan (TYNDP),
 developed and maintained by [Open Energy Transition (OET)](https://openenergytransition.org) in dialogue with ENTSO-E.
 It is built on [PyPSA-Eur](https://github.com/PyPSA/pypsa-eur), adapted to the TYNDP 2024 methodology and input data.
-It focuses on two blocks of TYNDP 2024: Scenario Building and Cost Benefit Analysis.
+It focuses on two blocks of TYNDP 2024: Scenario Building and Cost-Benefit Analysis.
 
 ## How does it work?
 
@@ -39,7 +41,7 @@ modelling workflow to the methodology, assumptions, and input data of TYNDP 2024
 
 Open Energy Transition also implemented TYNDP-specific scenario logic, demand projections, and network topology.
 
-Then, the model outcomes for Scenario Building and Cost Benefit Analysis were benchmarked with ENTSO-E reference data for the National Trends (NT) scenario, using 2009 as the reference climate year for the Scenario Building.
+Then, the model outcomes for Scenario Building and Cost-Benefit Analysis were benchmarked with ENTSO-E reference data for the National Trends (NT) scenario, using 2009 as the reference climate year for the Scenario Building.
 
 Open-TYNDP produces results for the capacity, generation mix, network flows, cross-border flows, and marginal prices which can be explored interactively on the [Results](/results/) page. The Open-TYNDP outcomes are benchmarked against ENTSO-E reference outputs and remaining deviations are documented and traceable to modelling choices that are often tool specific.
 

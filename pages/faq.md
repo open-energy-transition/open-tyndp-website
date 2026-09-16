@@ -28,7 +28,7 @@ documented in code rather than in manual steps that are hard to audit.
 
 ## Is Open-TYNDP a replacement for ENTSO-E's TYNDP 2024 process?
 
-No. Open-TYNDP is designed as a complementary, transparent tool that enables independent benchmarking and scenario testing independently of the official TYNDP process. It focuses on replicating Scenario Building and Cost Benefit Analysis of the TYNDP 2024. It is built to strengthen — not replace — ENTSO-E’s planning process.
+No. Open-TYNDP is designed as a complementary, transparent tool that enables independent benchmarking and scenario testing independently of the official TYNDP process. It focuses on replicating Scenario Building and Cost-Benefit Analysis of the TYNDP 2024. It is built to strengthen — not replace — ENTSO-E’s planning process.
 
 ## How does Open-TYNDP relate to [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/)?
 
@@ -55,6 +55,10 @@ Yes. The model is fully open-source and reproducible via Snakemake. New scenario
 ## What scenarios are currently benchmarked?
 
 Benchmarking has been performed for the National Trends (NT) scenario from TYNDP 2024, using climate year 2009. Results are compared against ENTSO-E reference outputs and  market model data.
+
+## Is Open-TYNDP being updated for TYNDP 2026?
+
+Yes. Open Energy Transition continues to actively develop Open-TYNDP and is currently working on implementing the TYNDP 2026 data and methodology, building on the TYNDP 2024 foundation. This work is developed on the [`tyndp-2026` branch](https://github.com/open-energy-transition/open-tyndp/tree/tyndp-2026) of the repository. You can follow ongoing work in the [issues](https://github.com/open-energy-transition/open-tyndp/issues?q=is%3Aissue%20label%3Atyndp-2026) and [pull requests](https://github.com/open-energy-transition/open-tyndp/pulls?q=is%3Apr+label%3Atyndp-2026) under the label `tyndp-2026` in our Github repository.
 
 ## Where can I report issues or contribute?
 
